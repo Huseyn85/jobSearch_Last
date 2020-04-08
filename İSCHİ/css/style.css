@@ -1,0 +1,632 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Quicksand";
+}
+
+#Header {
+  padding: 10px 0;
+}
+
+#Header a {
+  text-decoration: none;
+  color: #00a8cc;
+}
+
+.right {
+  text-align: right;
+}
+
+.right a {
+  margin-left: 20px;
+}
+
+#Header2 {
+  background-color: #fff;
+  padding-bottom: 15px;
+}
+
+#Header2 .left2 a {
+  text-decoration: none;
+  font-size: 45px;
+  font-weight: bold;
+  color: #000;
+}
+
+#Header2 .left2 a span {
+  color: #00a8cc;
+  font-size: 35px;
+}
+
+#Header2 .right2 {
+  text-align: right;
+}
+
+#Header2 .right2 #AddElan {
+  text-decoration: none;
+  border: 1px solid #00a8cc;
+  padding: 8px 13px;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #00a8cc;
+}
+
+#Header2 .right2 #AddElan:hover {
+  background-color: #00a8cc;
+  color: #fff;
+}
+
+#MediaHeader {
+  display: none;
+}
+
+#Categories {
+  background-color: #00a8cc;
+  padding: 15px 0;
+}
+
+#Categories a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+#Categories a:hover::before {
+  width: 100%;
+}
+
+#Categories a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#VIP {
+  margin: 3rem 0;
+}
+
+#VIP a {
+  text-decoration: none;
+}
+
+#VIP a:focus {
+  outline: none;
+}
+
+#VIP a h2 {
+  color: #00a8cc;
+}
+
+#VIP a small {
+  color: #3d3d3d;
+  font-weight: bold;
+}
+
+#VIP .elan-box {
+  padding: 15px;
+}
+
+#VIP .elan-box .elan-index {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 25px 15px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 15px -4px rgba(46, 46, 46, 0.15);
+          box-shadow: 0 0 15px -4px rgba(46, 46, 46, 0.15);
+  border-radius: 20px;
+}
+
+#VIP .elan-box .elan-index h2 {
+  font-size: 25px;
+  margin: 0;
+  padding: 8px 0;
+}
+
+#VIP .elan-box .elan-index img {
+  width: 19%;
+  margin: auto;
+  border-radius: 100%;
+}
+
+#IndexElan {
+  margin: 2rem 0;
+}
+
+#IndexElan .IE-link {
+  background: #f2f2f2;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+
+#IndexElan .IE-link a {
+  -webkit-text-decoration: #00a8cc;
+          text-decoration: #00a8cc;
+  color: #00a8cc;
+  font-size: 14px;
+}
+
+#IndexElan .IE-link span {
+  font-size: 14px;
+  color: #3d3d3d;
+}
+
+#IndexElan .jobName {
+  margin-top: 20px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#IndexElan .vipPremium {
+  margin-top: 30px;
+}
+
+#IndexElan .vipPremium .vip {
+  border: 1px solid #ffbf00;
+  padding: 10px 18px;
+  background: #ffbf00;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 15px 0 0;
+  font-size: 20px;
+}
+
+#IndexElan .vipPremium .vip span {
+  padding-left: 7px;
+}
+
+#IndexElan .vipPremium .forward {
+  border: 1px solid #ff6600;
+  padding: 10px 18px;
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 15px;
+  font-size: 20px;
+}
+
+#IndexElan .vipPremium .forward span {
+  padding-left: 7px;
+}
+
+#IndexElan .IE-main {
+  margin-top: 10px;
+}
+
+#IndexElan .IE-main .IE-main-box {
+  margin: 10px auto 5px auto;
+  -webkit-box-shadow: 3px 2px 3px #00a8cc;
+          box-shadow: 3px 2px 3px #00a8cc;
+  padding: 15px;
+  border: 1px solid #00a8cc;
+}
+
+#IndexElan .IE-main .IE-main-box p {
+  margin: 0;
+  color: #00a8cc;
+  font-size: 14px;
+}
+
+#IndexElan .IE-main .IE-main-box p span {
+  font-weight: 700;
+}
+
+#IndexElan .jobAbout {
+  margin-top: 20px;
+}
+
+#IndexElan .jobAbout ul {
+  padding-left: 15px;
+}
+
+.mTop {
+  text-align: center;
+  background: #00a8cc;
+  padding: 30px 0;
+  border-radius: 5px;
+  margin: 15px 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.mTop a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.mTop:hover {
+  background-color: #066377;
+}
+
+.mBottom {
+  margin: 15px 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: #00a8cc;
+  text-align: center;
+  padding: 30px 0;
+  border-radius: 5px;
+}
+
+.mBottom:hover {
+  background-color: #066377;
+}
+
+.mBottom a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#addElan {
+  margin: 2rem 0;
+}
+
+#addElan .AE-box {
+  margin: auto;
+  -webkit-box-shadow: 0 0 15px -4px rgba(46, 46, 46, 0.15);
+          box-shadow: 0 0 15px -4px rgba(46, 46, 46, 0.15);
+  border-radius: 20px;
+  padding: 25px 15px;
+}
+
+#addElan .AE-box hr {
+  background-color: #00a8cc;
+  width: 25%;
+  height: 3px;
+  margin: 2px auto 0 auto;
+  border: none;
+}
+
+#addElan .AE-box textarea {
+  width: 100%;
+  border: 1px solid #00a8cc;
+  border-radius: 10px;
+  padding: 10px 0 0 10px;
+  color: #3d3d3d;
+}
+
+#addElan .AE-box textarea:focus {
+  outline: none;
+}
+
+#addElan .AE-box button {
+  background-color: #00a8cc;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#addElan .AE-box button:focus {
+  outline: none;
+}
+
+#addElan .AE-box button:hover {
+  -webkit-box-shadow: 3px 4px 5px #3d3d3d;
+          box-shadow: 3px 4px 5px #3d3d3d;
+}
+
+#addElan .AE-box h2 {
+  text-align: center;
+  margin: 0;
+}
+
+#addElan .AE-box form {
+  margin: 15px 0;
+}
+
+#addElan .AE-box form input {
+  width: 70%;
+  border-radius: 10px;
+  padding: 7px;
+  border: 1px solid #00a8cc;
+  color: #00a8cc;
+}
+
+#addElan .AE-box form input:focus {
+  outline: none;
+}
+
+#addElan .AE-box form select {
+  width: 70%;
+  border-radius: 10px;
+  padding: 7px;
+  border: 1px solid #00a8cc;
+  color: #00a8cc;
+}
+
+#addElan .AE-box form select:focus {
+  outline: none;
+}
+
+#addElan .AE-box form p {
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#addElan .AE-box form .araliq {
+  width: 23%;
+}
+
+#ContactBox {
+  margin: 3rem 0;
+}
+
+#ContactBox .Cntbox {
+  margin: auto;
+  -webkit-box-shadow: 0 0 15px -4px rgba(46, 46, 46, 0.15);
+          box-shadow: 0 0 15px -4px rgba(46, 46, 46, 0.15);
+  border-radius: 20px;
+  padding: 25px 15px;
+}
+
+#ContactBox .Cntbox .Cntbox-top {
+  position: relative;
+  margin: 0 auto 40px;
+}
+
+#ContactBox .Cntbox .Cntbox-top::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00a8cc;
+}
+
+#ContactBox .Cntbox .Cntbox-bottom a {
+  text-decoration: none;
+  color: #00a8cc;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#ContactBox .Cntbox h2 {
+  text-align: center;
+}
+
+#ContactBox .Cntbox i {
+  color: #00a8cc;
+  font-size: 17px;
+  display: block;
+  margin: 20px 0;
+}
+
+#ContactBox .Cntbox i span {
+  padding-left: 13px;
+  color: #3d3d3d;
+}
+
+#ContactBox .Cntbox i a {
+  text-decoration: none;
+  color: #3d3d3d;
+  padding-left: 7px;
+}
+
+#CatIndex {
+  margin: 1rem 0;
+}
+
+#CatIndex .IE-link {
+  background: #f2f2f2;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+
+#CatIndex .IE-link a {
+  -webkit-text-decoration: #00a8cc;
+          text-decoration: #00a8cc;
+  color: #00a8cc;
+  font-size: 14px;
+}
+
+#CatIndex .IE-link span {
+  font-size: 14px;
+  color: #3d3d3d;
+}
+
+#CatIndex .CI-filter {
+  padding: 30px 0 0 0;
+  border: 1px solid #00a8cc;
+  -webkit-box-shadow: inset 0 0 1px 0px #00a8cc;
+          box-shadow: inset 0 0 1px 0px #00a8cc;
+  margin: 2rem 0;
+}
+
+#CatIndex .CI-filter .CI-btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #00a8cc;
+  font-weight: 600;
+  font-size: 17px;
+  width: 100%;
+  padding: 14px 55px;
+  letter-spacing: 1px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#CatIndex .CI-filter .CI-btn:hover {
+  background-color: #0488a5;
+}
+
+#CatIndex .CI-filter .col-lg-2 {
+  margin-bottom: 20px;
+}
+
+#CatIndex .CI-filter p {
+  margin-bottom: 7px;
+  font-weight: bold;
+  color: #3d3d3d;
+  font-size: 14px;
+}
+
+#CatIndex .CI-filter select {
+  width: 100%;
+  border: 1px solid #00a8cc;
+  border-radius: 10px;
+  padding: 5px 0 5px 5px;
+  font-weight: bold;
+  color: #00a8cc;
+}
+
+#CatIndex .CI-filter select:focus {
+  outline: none;
+}
+
+#AllElan {
+  margin: 3rem 0;
+}
+
+#AllElan a {
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+#AllElan a:focus {
+  outline: none;
+}
+
+#AllElan a h2 {
+  color: #00a8cc;
+}
+
+#AllElan a small {
+  color: #3d3d3d;
+  font-weight: bold;
+}
+
+#AllElan .elan-box .elan-index {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 25px 15px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 15px -4px rgba(46, 46, 46, 0.15);
+          box-shadow: 0 0 15px -4px rgba(46, 46, 46, 0.15);
+  border-radius: 20px;
+}
+
+#AllElan .elan-box .elan-index h2 {
+  font-size: 20px;
+  margin: 0;
+  padding: 8px 0 1px;
+}
+
+#AllElan .elan-box .elan-index img {
+  width: 19%;
+  margin: auto;
+  border-radius: 100%;
+}
+
+#Slider {
+  margin-top: 2rem;
+}
+
+#Footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+#Footer p {
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .elan-left, .elan-right {
+    text-align: center;
+  }
+  .jobName {
+    font-size: 25px !important;
+    text-align: center;
+  }
+  .jobAbout p {
+    font-size: 14px;
+  }
+  .vipPremium {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .vipPremium .forward, .vipPremium .vip {
+    padding: 6px 10px !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+  .vipPremium .forward i, .vipPremium .vip i {
+    font-size: 15px;
+  }
+  .vip-text, .AllElan-text {
+    text-align: center;
+  }
+  .vip-text h2, .AllElan-text h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  #Categories {
+    display: none;
+  }
+  #Header2 .left2 {
+    text-align: center;
+  }
+  #Header2 .right2 {
+    margin: 10px 0;
+    text-align: center;
+  }
+  #MediaHeader {
+    display: block;
+  }
+  #MediaHeader .Mh-top {
+    background-color: #00a8cc;
+    text-align: center;
+    padding: 10px 0;
+  }
+  #MediaHeader .Mh-top h5 {
+    color: #fff;
+    margin: 0;
+  }
+  #MediaHeader .Mh-bottom {
+    display: none;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+  #MediaHeader .Mh-bottom a {
+    display: block;
+    color: #00a8cc;
+    padding: 10px 0;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .elan-index h2 {
+    font-size: 16px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
